@@ -21,4 +21,8 @@ describe('Example site', () => {
     cy.visit('/README/')
     cy.contains('h2', 'README')
   })
+
+  afterEach(() => {
+    cy.wait(1000)
+  })
 })
