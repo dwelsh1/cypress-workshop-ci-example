@@ -3,7 +3,7 @@
 
 ## README
 
-Before the workshop you should fork this repo into your personal account and then use to run tests on various continuous integration providers
+Before the workshop you should fork this repo into your personal account and then use to run tests on various continuous integration providers.
 
 ## Install and use
 
