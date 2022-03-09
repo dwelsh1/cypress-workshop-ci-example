@@ -4,10 +4,10 @@ on:
     branches:
       - main
 jobs:
-  test:
+  build-and-test:
     runs-on: ubuntu-20.04
     steps:
-      - name: Checkout 🛎
+      - name: Checkout
         uses: actions/checkout@v2
 
       - name: Install dependencies
