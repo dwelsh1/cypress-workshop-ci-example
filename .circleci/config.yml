@@ -9,14 +9,27 @@ workflows:
           name: Install everything
       # "run" is the name of the job defined in Cypress orb
       - cypress/run:
-          name: Run Cypress tests
+          name: Sanity Cypress tests
           requires:
             - Install everything
+          parallel: true
+          parallelism: 1
+          start: npm start
+          wait-on: 'http://localhost:8080'
+          no-workspace: true
+          spec: 'cypress/integration/spec.js'
+          record: true
+          tags: 'sanity,qa-env'
+          group: '2. Sanity Tests'
+      - cypress/run:
+          name: All Cypress tests
+          requires:
+            - Sanity Cypress tests
           parallel: true
           parallelism: 3
           start: npm start
           wait-on: 'http://localhost:8080'
           no-workspace: true
           record: true
-          tags: 'smoke,qa_env'
+          tags: 'all,qa_env'
           group: '1. All Tests'
