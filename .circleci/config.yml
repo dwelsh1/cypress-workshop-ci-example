@@ -13,3 +13,4 @@ workflows:
           no-workspace: true
           record: true
           tags: 'smoke,qa_env'
+          group: '1. All Tests'
