@@ -8,7 +8,7 @@ describe('Smoke tests', () => {
 
   it('navigates to README', () => {
     cy.visit('/')
-    cy.contains('a', 'README99').click()
+    cy.contains('a', 'README').click()
     cy.location('pathname').should('equal', '/README/')
   })
 
