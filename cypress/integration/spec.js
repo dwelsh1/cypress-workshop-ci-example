@@ -12,6 +12,7 @@ describe('Example site', () => {
     cy.location('pathname').should('equal', '/README/')
   })
 
+  
   afterEach(() => {
     cy.wait(1000)
   })
