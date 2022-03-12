@@ -1,5 +1,5 @@
 # cypress-workshop-ci-example
-> A simple example app to be used during [bahmutov/cypress-workshop-ci](https://github.com/bahmutov/cypress-workshop-ci) session
+> A simple example app to be used during [bahmutov/cypress-workshop-ci](https://github.com/bahmutov/cypress-workshop-ci) session.
 
 ## README
 
