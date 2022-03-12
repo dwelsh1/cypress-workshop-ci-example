@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-describe('Example site', () => {
+describe('Smoke tests', () => {
   it('loads', () => {
     cy.visit('/')
     cy.contains('h1', 'cypress-workshop-ci-example').should('be.visible')
@@ -8,7 +8,7 @@ describe('Example site', () => {
 
   it('navigates to README', () => {
     cy.visit('/')
-    cy.contains('a', 'README').click()
+    cy.contains('a', 'README99').click()
     cy.location('pathname').should('equal', '/README/')
   })
 
